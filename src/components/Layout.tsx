@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { Heart, Pill, Activity, AlertTriangle, LayoutDashboard, BookOpen, Dumbbell, Menu, X } from "lucide-react";
+import { HeartPulse, Pill, Activity, AlertTriangle, LayoutDashboard, BookOpen, Dumbbell, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -22,11 +22,11 @@ const Layout = () => {
         <div className="flex items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
             <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-primary/30">
-              <Heart className="w-5 h-5 text-secondary" />
+              <HeartPulse className="w-5 h-5 text-secondary" />
             </div>
             <div>
               <h1 className="text-lg font-bold font-display text-secondary">Oreliance</h1>
-              <p className="text-xs text-muted-foreground">Réhabilitation Cardiaque</p>
+              <p className="text-xs text-foreground">Réhabilitation Cardiaque</p>
             </div>
           </div>
           <button
@@ -68,9 +68,9 @@ const Layout = () => {
             ))}
           </nav>
           <div className="absolute bottom-6 left-4 right-4">
-            <div className="p-4 rounded-xl bg-primary/20 border border-primary/30">
+            <div className="p-4 rounded-xl bg-primary/20 border border-primary">
               <p className="text-xs font-medium text-secondary mb-1">Besoin d'aide ?</p>
-              <p className="text-xs text-muted-foreground">Contactez votre équipe médicale pour toute question.</p>
+              <p className="text-xs text-foreground">Contactez votre équipe médicale pour toute question.</p>
             </div>
           </div>
         </aside>
@@ -81,8 +81,13 @@ const Layout = () => {
         )}
 
         {/* Main Content */}
-        <main className="flex-1 p-6 lg:p-10 max-w-5xl">
+        <main className="flex-1 p-6 max-w-5xl">
           <Outlet />
+          <div>
+              <p className="text-xs text-muted-foreground mt-10 text-center">
+                © 2026 <a href="https://mikahermet.fr" className="underline">mikaHermet</a> Tous droits réservés. Conçu pour soutenir votre parcours de réhabilitation cardiaque.
+              </p>
+          </div>
         </main>
       </div>
     </div>

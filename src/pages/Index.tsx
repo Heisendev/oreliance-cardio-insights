@@ -92,14 +92,14 @@ const Index = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.4 }}
       >
-        <Card className="border-accent/30 bg-accent/5">
+        <Card className="border-warning/90 bg-warning/20">
           <CardContent className="p-6 flex gap-4 items-start">
-            <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-              <HeartPulse className="w-5 h-5 text-accent" />
+            <div className="w-10 h-10 rounded-lg bg-warning/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <HeartPulse className="w-5 h-5 text-warning" />
             </div>
             <div>
               <h3 className="font-semibold text-foreground mb-1">Rappel important</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-sm text-foreground leading-relaxed">
                 Ces informations sont fournies à titre éducatif et ne remplacent pas l'avis de votre médecin. 
                 Consultez toujours votre cardiologue avant de modifier votre traitement.
               </p>
