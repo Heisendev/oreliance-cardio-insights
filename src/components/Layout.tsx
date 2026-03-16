@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { HeartPulse, Pill, Activity, AlertTriangle, LayoutDashboard, BookOpen, Dumbbell, Menu, X } from "lucide-react";
+import { HeartPulse, Pill, Activity, AlertTriangle, LayoutDashboard, BookOpen, Dumbbell, Menu, X, UtensilsCrossed } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -9,6 +9,7 @@ const navItems = [
   { to: "/arterial-pressure", label: "Pression artérielle", icon: Activity },
   { to: "/risk-factors", label: "Facteurs de risque", icon: AlertTriangle },
   { to: "/physical-activity", label: "Activité physique", icon: Dumbbell },
+  { to: "/nutrition", label: "Guide alimentaire", icon: UtensilsCrossed },
   { to: "/resources", label: "Ressources", icon: BookOpen },
 ];
 

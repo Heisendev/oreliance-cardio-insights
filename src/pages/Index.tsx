@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Pill, Activity, AlertTriangle, HeartPulse, Dumbbell } from "lucide-react";
+import { Pill, Activity, AlertTriangle, HeartPulse, Dumbbell, UtensilsCrossed } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -27,6 +27,12 @@ const sections = [
     icon: Dumbbell,
     title: "Activité Physique",
     description: "Programme hebdomadaire adapté à votre réhabilitation cardiaque.",
+  },
+  {
+    to: "/nutrition",
+    icon: UtensilsCrossed,
+    title: "Guide Alimentaire",
+    description: "Régime méditerranéen, gestion du sel et des graisses pour votre cœur.",
   },
 ];
 

@@ -8,6 +8,7 @@ import RiskFactors from "./pages/RiskFactors";
 import Resources from "./pages/Resources";
 import PhysicalActivity from "./pages/PhysicalActivity";
 import NotFound from "./pages/NotFound";
+import Nutrition from "./pages/Nutrition";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ const App = () => (
             <Route path="/risk-factors" element={<RiskFactors />} />
             <Route path="/resources" element={<Resources />} />
             <Route path="/physical-activity" element={<PhysicalActivity />} />
+            <Route path="/nutrition" element={<Nutrition />} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
