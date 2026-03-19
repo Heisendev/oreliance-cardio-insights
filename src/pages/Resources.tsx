@@ -58,6 +58,11 @@ const resourceCategories = [
     title: "Outils d'évaluation & Auto-tests",
     resources: [
       {
+        name: "Test de Borg – Échelle d'effort perçu",
+        description: "Outil simple pour évaluer votre niveau d'effort pendant l'activité physique.",
+        url: "/resources/borg-test.pdf",
+      },
+      {
         name: "Test « Comment va votre cœur ? »",
         description: "Questionnaire en ligne de la Fédération Française de Cardiologie pour évaluer votre risque.",
         url: "https://www.fedecardio.org/je-me-teste/comment-va-votre-coeur/",
